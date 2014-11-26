@@ -1,16 +1,4 @@
 ###
-# Compass
-###
-
-# Susy grids in Compass
-require 'susy'
-
-# Change Compass configuration
-# compass_config do |config|
-#   config.output_style = :compact
-# end
-
-###
 # Page command
 ###
 
@@ -81,5 +69,6 @@ configure :build do
 
   # Or use a different image path
   # set :http_path, "/Content/images/"
+  Sass::Script::Number.precision = 7
 end
 

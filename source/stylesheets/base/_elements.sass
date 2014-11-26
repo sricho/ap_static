@@ -1,10 +1,10 @@
 // Set baseline font size & line height
 // See http://compass-style.org/reference/compass/typography/vertical_rhythm/#mixin-establish-baseline
-+establish-baseline
+//+establish-baseline
 
 // Set box-sizing: border-box and set the $border-box-sizing variable used internally by Susy
 // See http://susy.oddbird.net/guides/reference/#ref-border-box-mixin
-+border-box-sizing
+//+border-box-sizing
 
 // The basics
 html
@@ -22,32 +22,47 @@ a
     color: darken($blue, 20%)
 
 p
-  +leader(0)
-  +trailer(1)
+  +space(margin-top)
+  +space(margin-bottom)
 
   &:last-child
-    +trailer(0)
+    +space(margin-bottom, 0)
 
 // Lists
 ul, ol
-  +leader(0)
-  +trailer(1)
-  padding-left: rhythm(1.5)
+  +space-reset
+  +space(margin-bottom)
+  +space(padding-left)
 
   li
-    +trailer(0)
+    +space(margin-bottom, 0)
 
 h1, .h1
-  +adjust-font-size-to(32px)
-  +leader(0)
-  +trailer(1, 32px)
+  +font-size(32px)
+  +space-reset
+  +space(margin-bottom)
 
 h2, .h2
-  +adjust-font-size-to(24px)
-  +leader(0)
-  +trailer(1, 24px)
+  +font-size(24px)
+  +space-reset
+  +space(margin-bottom)
 
 h3, .h3
-  +adjust-font-size-to(19px)
-  +leader(0)
-  +trailer(1, 19px)
+  +font-size(20px)
+  +space-reset
+  +space(margin-bottom)
+
+h4, .h4
+  +font-size(18px)
+  +space-reset
+  +space(margin-bottom)
+
+h5, .h5
+  +font-size(14px)
+  +space-reset
+  +space(margin-bottom)
+
+h6, .h6
+  +font-size(12px)
+  +space-reset
+  +space(margin-bottom)

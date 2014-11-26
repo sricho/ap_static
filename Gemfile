@@ -2,9 +2,8 @@ source 'https://rubygems.org'
 
 gem "middleman", "~> 3.1.5"
 
-# Compass plugins
-gem 'susy', "~> 1.0.9" # Susy
-gem "compass", "~> 0.12.2"
+gem "bourbon"
+gem "neat"
 
 # Javascript
 gem 'therubyracer'
