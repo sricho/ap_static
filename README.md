@@ -5,7 +5,7 @@ My Middleman Starter
 
 Ain't nothin' but a project starter template for the [Middleman static site generator](http://middlemanapp.com/) forked from [Tom Bryan, middleman_starter](https://github.com/tombryan/middleman_starter) that steals heavily from [Nathan Henderson's Amicus](https://github.com/nathos/amicus) and [Ben Smithett's Style](https://github.com/bensmithett/style).
 
-It's for people who prefer ERB to Haml, and who like [BEM](http://bem.info/), [SMACSS](http://smacss.com/), [Sass](http://sass-lang.com/), and [Susy](http://susy.oddbird.net/). This fork includes [Typecsset](https://github.com/csswizardry/typecsset), some handy wrappers for Typecsset and some other goodies, I'll update this list when it gets growing. It even has a style guide if you're into [atomic design](http://bradfrostweb.com/blog/post/atomic-web-design/).
+It's for people who prefer ERB to Haml, and who like [BEM](http://bem.info/), [SMACSS](http://smacss.com/), [Sass](http://sass-lang.com/), [Bourbon](https://github.com/thoughtbot/bourbon), and [Neat](https://github.com/thoughtbot/neat). This fork includes [Typecsset](https://github.com/csswizardry/typecsset), some handy wrappers for Typecsset. Attribute modules for controlling the grid, check out [the AM specification](https://github.com/amcss/attribute-module-specification/) or the code for how this works. I'll update this list when it gets growing. It even has a style guide if you're into [atomic design](http://bradfrostweb.com/blog/post/atomic-web-design/).
 
 ### How do I even?
 - You'll want to `$ gem install middleman` if you haven't already (and read the [documentation](http://middlemanapp.com/getting-started/) to find out how it works).
