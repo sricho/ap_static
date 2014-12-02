@@ -1,63 +1,73 @@
-// This module is a top-level Susy grid container.
-//
-// You can use Susy methods like span-columns() and at-breakpoint() in modules that
-// are placed inside this container. 
-//
-// You'll eventually want to delete the +susy-grid-background lines.
-//
-// http://susy.oddbird.net/guides/reference/
-
-//.grid
-  //+container
-  //+susy-grid-background
-
-  //+at-breakpoint($tablet-and-above)
-    //+container
-    //+susy-grid-background
-
-  //+at-breakpoint($desktop-and-above)
-    //+container
-    //+susy-grid-background
-    //@if $lt-ie9
-      //// Force static width for IE7+8
-      //width: pxtoem(1024px)
-    //@else
-      //// Constrain the fluid grid to a max width
-      //max-width: pxtoem(1024px) 
+.grid
+  +outer-container
 
 [am-Grid]
   +clearfix
   float: left
   width: 100%
 
-  @for $column-span from 1 through $grid-columns
-    +media($tablet)
+  +media($mobile)
+    @for $column-span from 1 through $grid-columns
+      [am-Grid-Col~="s:#{$column-span}"]
+        +span-columns($column-span, $grid-columns)
+
+      [am-Grid-Col~="s:pre#{$column-span}"]
+        +shift($column-span)
+
+      @for $inner-column from 1 through $column-span
+        [am-Grid-Col~="s:#{$inner-column}:#{$column-span}"]
+          +span-columns($inner-column of $column-span)
+        [am-Grid-Col~="s:pre#{$inner-column}:#{$column-span}"]
+          +shift($inner-column of $column-span)
+
+      [am-Grid-Row~="s:end"]
+        margin-right: 0
+        clear: right
+
+      [am-Grid-Row~="s:start"]
+        clear: left
+
+
+  +media($tablet)
+    @for $column-span from 1 through $grid-columns
       [am-Grid-Col~="m:#{$column-span}"]
         +span-columns($column-span, $grid-columns)
 
       [am-Grid-Col~="m:pre#{$column-span}"]
         +shift($column-span)
 
-    +media($desktop)
+      @for $inner-column from 1 through $column-span
+        [am-Grid-Col~="m:#{$inner-column}:#{$column-span}"]
+          +span-columns($inner-column of $column-span)
+        [am-Grid-Col~="m:pre#{$inner-column}:#{$column-span}"]
+          +shift($inner-column of $column-span)
+
+    [am-Grid-Row~="m:end"]
+      margin-right: 0
+      clear: right
+
+    [am-Grid-Row~="m:start"]
+      clear: left
+
+
+  +media($desktop)
+    @for $column-span from 1 through $grid-columns
       [am-Grid-Col~="l:#{$column-span}"]
         +span-columns($column-span, $grid-columns)
 
       [am-Grid-Col~="l:pre#{$column-span}"]
         +shift($column-span)
 
+      @for $inner-column from 1 through $column-span
+        [am-Grid-Col~="l:#{$inner-column}:#{$column-span}"]
+          +span-columns($inner-column of $column-span)
+        [am-Grid-Col~="l:pre#{$inner-column}:#{$column-span}"]
+          +shift($inner-column of $column-span)
 
-    @for $inner-column from 1 through $column-span
-      [am-Grid-Col~="l:#{$inner-column}:#{$column-span}"]
-        +span-columns($inner-column of $column-span)
-      [am-Grid-Col~="l:pre#{$inner-column}:#{$column-span}"]
-        +shift($inner-column of $column-span)
+    [am-Grid-Row~="l:end"]
+      margin-right: 0
+      clear: right
 
-  [am-Grid-Row~="l:end"]
-    margin-right: 0
-    clear: right
+    [am-Grid-Row~="l:start"]
+      clear: left
 
-  [am-Grid-Row~="l:start"]
-    clear: left
-
-.grid
-  +outer-container

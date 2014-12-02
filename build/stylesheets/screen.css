@@ -1,9 +1,399 @@
 @charset "UTF-8";
-/* line 2, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_grid.scss */
+/* normalize.css v2.1.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined in IE 8/9.
+ */
+/* line 23, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * Correct `inline-block` display not defined in IE 8/9.
+ */
+/* line 33, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block; }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 42, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 51, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+[hidden] {
+  display: none; }
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 65, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+/* line 75, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+body {
+  margin: 0; }
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/**
+ * Address `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 87, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+a:focus {
+  outline: thin dotted; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+/* line 96, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 109, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 118, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 127, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari 5 and Chrome.
+ */
+/* line 135, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+/* line 143, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+/* line 153, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Correct font family set oddly in Safari 5 and Chrome.
+ */
+/* line 165, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em; }
+
+/**
+ * Improve readability of pre-formatted text in all browsers.
+ */
+/* line 174, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+pre {
+  white-space: pre-wrap; }
+
+/**
+ * Set consistent quote types.
+ */
+/* line 182, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+/* line 190, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 199, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+/* line 206, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+sup {
+  top: -0.5em; }
+
+/* line 210, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+sub {
+  bottom: -0.25em; }
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9.
+ */
+/* line 222, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow displayed oddly in IE 9.
+ */
+/* line 230, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari 5.
+ */
+/* line 242, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+figure {
+  margin: 0; }
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/**
+ * Define consistent border, margin, and padding.
+ */
+/* line 254, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 265, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Correct font family not being inherited in all browsers.
+ * 2. Correct font size not being inherited in all browsers.
+ * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 279, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 291, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+button,
+input {
+  line-height: normal; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
+ * Correct `select` style inheritance in Firefox 4+ and Opera.
+ */
+/* line 303, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 318, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+/* line 328, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * 1. Address box sizing set to `content-box` in IE 8/9.
+ * 2. Remove excess padding in IE 8/9.
+ */
+/* line 338, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 349, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 362, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+/* line 371, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * 1. Remove default vertical scrollbar in IE 8/9.
+ * 2. Improve readability and alignment in all browsers.
+ */
+/* line 381, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */ }
+
+/* ==========================================================================
+   Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+/* line 394, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 2, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_grid.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+
+/* line 11, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_visual-grid.scss */
+body:before {
+  content: '';
+  display: inline-block;
+  background-image: deprecated-webkit-gradient(linear, left top, left bottom, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.1721527%, rgba(0, 0, 0, 0) 6.1721527%, rgba(0, 0, 0, 0) 8.5298043%, #eeeeee 8.5298043%, #eeeeee 14.701957%, rgba(0, 0, 0, 0) 14.701957%, rgba(0, 0, 0, 0) 17.0596086%, #eeeeee 17.0596086%, #eeeeee 23.2317613%, rgba(0, 0, 0, 0) 23.2317613%, rgba(0, 0, 0, 0) 25.5894129%, #eeeeee 25.5894129%, #eeeeee 31.7615656%, rgba(0, 0, 0, 0) 31.7615656%, rgba(0, 0, 0, 0) 34.1192172%, #eeeeee 34.1192172%, #eeeeee 40.2913699%, rgba(0, 0, 0, 0) 40.2913699%, rgba(0, 0, 0, 0) 42.6490215%, #eeeeee 42.6490215%, #eeeeee 48.8211742%, rgba(0, 0, 0, 0) 48.8211742%, rgba(0, 0, 0, 0) 51.1788258%, #eeeeee 51.1788258%, #eeeeee 57.3509785%, rgba(0, 0, 0, 0) 57.3509785%, rgba(0, 0, 0, 0) 59.7086301%, #eeeeee 59.7086301%, #eeeeee 65.8807828%, rgba(0, 0, 0, 0) 65.8807828%, rgba(0, 0, 0, 0) 68.2384344%, #eeeeee 68.2384344%, #eeeeee 74.4105871%, rgba(0, 0, 0, 0) 74.4105871%, rgba(0, 0, 0, 0) 76.7682387%, #eeeeee 76.7682387%, #eeeeee 82.9403914%, rgba(0, 0, 0, 0) 82.9403914%, rgba(0, 0, 0, 0) 85.298043%, #eeeeee 85.298043%, #eeeeee 91.4701957%, rgba(0, 0, 0, 0) 91.4701957%, rgba(0, 0, 0, 0) 93.8278473%, #eeeeee 93.8278473%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
+  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.1721527%, rgba(0, 0, 0, 0) 6.1721527%, rgba(0, 0, 0, 0) 8.5298043%, #eeeeee 8.5298043%, #eeeeee 14.701957%, rgba(0, 0, 0, 0) 14.701957%, rgba(0, 0, 0, 0) 17.0596086%, #eeeeee 17.0596086%, #eeeeee 23.2317613%, rgba(0, 0, 0, 0) 23.2317613%, rgba(0, 0, 0, 0) 25.5894129%, #eeeeee 25.5894129%, #eeeeee 31.7615656%, rgba(0, 0, 0, 0) 31.7615656%, rgba(0, 0, 0, 0) 34.1192172%, #eeeeee 34.1192172%, #eeeeee 40.2913699%, rgba(0, 0, 0, 0) 40.2913699%, rgba(0, 0, 0, 0) 42.6490215%, #eeeeee 42.6490215%, #eeeeee 48.8211742%, rgba(0, 0, 0, 0) 48.8211742%, rgba(0, 0, 0, 0) 51.1788258%, #eeeeee 51.1788258%, #eeeeee 57.3509785%, rgba(0, 0, 0, 0) 57.3509785%, rgba(0, 0, 0, 0) 59.7086301%, #eeeeee 59.7086301%, #eeeeee 65.8807828%, rgba(0, 0, 0, 0) 65.8807828%, rgba(0, 0, 0, 0) 68.2384344%, #eeeeee 68.2384344%, #eeeeee 74.4105871%, rgba(0, 0, 0, 0) 74.4105871%, rgba(0, 0, 0, 0) 76.7682387%, #eeeeee 76.7682387%, #eeeeee 82.9403914%, rgba(0, 0, 0, 0) 82.9403914%, rgba(0, 0, 0, 0) 85.298043%, #eeeeee 85.298043%, #eeeeee 91.4701957%, rgba(0, 0, 0, 0) 91.4701957%, rgba(0, 0, 0, 0) 93.8278473%, #eeeeee 93.8278473%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
+  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.1721527%, rgba(0, 0, 0, 0) 6.1721527%, rgba(0, 0, 0, 0) 8.5298043%, #eeeeee 8.5298043%, #eeeeee 14.701957%, rgba(0, 0, 0, 0) 14.701957%, rgba(0, 0, 0, 0) 17.0596086%, #eeeeee 17.0596086%, #eeeeee 23.2317613%, rgba(0, 0, 0, 0) 23.2317613%, rgba(0, 0, 0, 0) 25.5894129%, #eeeeee 25.5894129%, #eeeeee 31.7615656%, rgba(0, 0, 0, 0) 31.7615656%, rgba(0, 0, 0, 0) 34.1192172%, #eeeeee 34.1192172%, #eeeeee 40.2913699%, rgba(0, 0, 0, 0) 40.2913699%, rgba(0, 0, 0, 0) 42.6490215%, #eeeeee 42.6490215%, #eeeeee 48.8211742%, rgba(0, 0, 0, 0) 48.8211742%, rgba(0, 0, 0, 0) 51.1788258%, #eeeeee 51.1788258%, #eeeeee 57.3509785%, rgba(0, 0, 0, 0) 57.3509785%, rgba(0, 0, 0, 0) 59.7086301%, #eeeeee 59.7086301%, #eeeeee 65.8807828%, rgba(0, 0, 0, 0) 65.8807828%, rgba(0, 0, 0, 0) 68.2384344%, #eeeeee 68.2384344%, #eeeeee 74.4105871%, rgba(0, 0, 0, 0) 74.4105871%, rgba(0, 0, 0, 0) 76.7682387%, #eeeeee 76.7682387%, #eeeeee 82.9403914%, rgba(0, 0, 0, 0) 82.9403914%, rgba(0, 0, 0, 0) 85.298043%, #eeeeee 85.298043%, #eeeeee 91.4701957%, rgba(0, 0, 0, 0) 91.4701957%, rgba(0, 0, 0, 0) 93.8278473%, #eeeeee 93.8278473%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
+  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.1721527%, rgba(0, 0, 0, 0) 6.1721527%, rgba(0, 0, 0, 0) 8.5298043%, #eeeeee 8.5298043%, #eeeeee 14.701957%, rgba(0, 0, 0, 0) 14.701957%, rgba(0, 0, 0, 0) 17.0596086%, #eeeeee 17.0596086%, #eeeeee 23.2317613%, rgba(0, 0, 0, 0) 23.2317613%, rgba(0, 0, 0, 0) 25.5894129%, #eeeeee 25.5894129%, #eeeeee 31.7615656%, rgba(0, 0, 0, 0) 31.7615656%, rgba(0, 0, 0, 0) 34.1192172%, #eeeeee 34.1192172%, #eeeeee 40.2913699%, rgba(0, 0, 0, 0) 40.2913699%, rgba(0, 0, 0, 0) 42.6490215%, #eeeeee 42.6490215%, #eeeeee 48.8211742%, rgba(0, 0, 0, 0) 48.8211742%, rgba(0, 0, 0, 0) 51.1788258%, #eeeeee 51.1788258%, #eeeeee 57.3509785%, rgba(0, 0, 0, 0) 57.3509785%, rgba(0, 0, 0, 0) 59.7086301%, #eeeeee 59.7086301%, #eeeeee 65.8807828%, rgba(0, 0, 0, 0) 65.8807828%, rgba(0, 0, 0, 0) 68.2384344%, #eeeeee 68.2384344%, #eeeeee 74.4105871%, rgba(0, 0, 0, 0) 74.4105871%, rgba(0, 0, 0, 0) 76.7682387%, #eeeeee 76.7682387%, #eeeeee 82.9403914%, rgba(0, 0, 0, 0) 82.9403914%, rgba(0, 0, 0, 0) 85.298043%, #eeeeee 85.298043%, #eeeeee 91.4701957%, rgba(0, 0, 0, 0) 91.4701957%, rgba(0, 0, 0, 0) 93.8278473%, #eeeeee 93.8278473%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
+  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.1721527%, rgba(0, 0, 0, 0) 6.1721527%, rgba(0, 0, 0, 0) 8.5298043%, #eeeeee 8.5298043%, #eeeeee 14.701957%, rgba(0, 0, 0, 0) 14.701957%, rgba(0, 0, 0, 0) 17.0596086%, #eeeeee 17.0596086%, #eeeeee 23.2317613%, rgba(0, 0, 0, 0) 23.2317613%, rgba(0, 0, 0, 0) 25.5894129%, #eeeeee 25.5894129%, #eeeeee 31.7615656%, rgba(0, 0, 0, 0) 31.7615656%, rgba(0, 0, 0, 0) 34.1192172%, #eeeeee 34.1192172%, #eeeeee 40.2913699%, rgba(0, 0, 0, 0) 40.2913699%, rgba(0, 0, 0, 0) 42.6490215%, #eeeeee 42.6490215%, #eeeeee 48.8211742%, rgba(0, 0, 0, 0) 48.8211742%, rgba(0, 0, 0, 0) 51.1788258%, #eeeeee 51.1788258%, #eeeeee 57.3509785%, rgba(0, 0, 0, 0) 57.3509785%, rgba(0, 0, 0, 0) 59.7086301%, #eeeeee 59.7086301%, #eeeeee 65.8807828%, rgba(0, 0, 0, 0) 65.8807828%, rgba(0, 0, 0, 0) 68.2384344%, #eeeeee 68.2384344%, #eeeeee 74.4105871%, rgba(0, 0, 0, 0) 74.4105871%, rgba(0, 0, 0, 0) 76.7682387%, #eeeeee 76.7682387%, #eeeeee 82.9403914%, rgba(0, 0, 0, 0) 82.9403914%, rgba(0, 0, 0, 0) 85.298043%, #eeeeee 85.298043%, #eeeeee 91.4701957%, rgba(0, 0, 0, 0) 91.4701957%, rgba(0, 0, 0, 0) 93.8278473%, #eeeeee 93.8278473%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
+  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0, #eeeeee 0, #eeeeee 6.1721527%, rgba(0, 0, 0, 0) 6.1721527%, rgba(0, 0, 0, 0) 8.5298043%, #eeeeee 8.5298043%, #eeeeee 14.701957%, rgba(0, 0, 0, 0) 14.701957%, rgba(0, 0, 0, 0) 17.0596086%, #eeeeee 17.0596086%, #eeeeee 23.2317613%, rgba(0, 0, 0, 0) 23.2317613%, rgba(0, 0, 0, 0) 25.5894129%, #eeeeee 25.5894129%, #eeeeee 31.7615656%, rgba(0, 0, 0, 0) 31.7615656%, rgba(0, 0, 0, 0) 34.1192172%, #eeeeee 34.1192172%, #eeeeee 40.2913699%, rgba(0, 0, 0, 0) 40.2913699%, rgba(0, 0, 0, 0) 42.6490215%, #eeeeee 42.6490215%, #eeeeee 48.8211742%, rgba(0, 0, 0, 0) 48.8211742%, rgba(0, 0, 0, 0) 51.1788258%, #eeeeee 51.1788258%, #eeeeee 57.3509785%, rgba(0, 0, 0, 0) 57.3509785%, rgba(0, 0, 0, 0) 59.7086301%, #eeeeee 59.7086301%, #eeeeee 65.8807828%, rgba(0, 0, 0, 0) 65.8807828%, rgba(0, 0, 0, 0) 68.2384344%, #eeeeee 68.2384344%, #eeeeee 74.4105871%, rgba(0, 0, 0, 0) 74.4105871%, rgba(0, 0, 0, 0) 76.7682387%, #eeeeee 76.7682387%, #eeeeee 82.9403914%, rgba(0, 0, 0, 0) 82.9403914%, rgba(0, 0, 0, 0) 85.298043%, #eeeeee 85.298043%, #eeeeee 91.4701957%, rgba(0, 0, 0, 0) 91.4701957%, rgba(0, 0, 0, 0) 93.8278473%, #eeeeee 93.8278473%, #eeeeee 100.0%, rgba(0, 0, 0, 0) 100.0%);
+  height: 100%;
+  left: 0;
+  margin: 0 auto;
+  max-width: 68em;
+  opacity: 0.4;
+  position: fixed;
+  right: 0;
+  width: 100%;
+  pointer-events: none;
+  z-index: -1; }
 
 /**
  * Typecsset
@@ -19,12 +409,12 @@
  * A lot of elements in Typecsset need to share some declarations (mainly for
  * vertical rhythm), so we `@extend` some silent classes.
  */
-/* line 100, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
+/* line 100, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
 address, pre, blockquote, table {
   margin: 0;
   padding: 0; }
 
-/* line 105, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
+/* line 105, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
 address, pre, blockquote, table {
   margin-bottom: 24px;
   margin-bottom: 1.5rem; }
@@ -39,14 +429,14 @@ address, pre, blockquote, table {
  *    desired `line-height` (defined previously in pixels), and your project’s
  *    base font size.
  */
-/* line 132, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
+/* line 132, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
 html {
   font-size: 1em;
   /* [1] */
   line-height: 1.5;
   /* [2] */ }
 
-/* line 146, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
+/* line 146, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
 body {
   margin: 0; }
 
@@ -111,7 +501,7 @@ body {
  * 1. Fix an odd quirk whereby, without this, code blocks are rendered at a
  *    font-size smaller than 1em.
  */
-/* line 251, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
+/* line 251, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
 code,
 kbd,
 pre,
@@ -125,7 +515,7 @@ samp {
 /**
  * 1. Hang the opening quote of the blockquote.
  */
-/* line 265, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
+/* line 265, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
 blockquote {
   text-indent: -0.41em;
   /* [1] */ }
@@ -134,47 +524,47 @@ blockquote {
  * Set up quote marks on quoting elements. This is very English-based, so we are
  * using “, ”, ‘, and ’ quotes.
  */
-/* line 273, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
+/* line 273, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
 blockquote {
   quotes: "“" "”";
   margin-left: 48px;
   margin-left: 3rem; }
-  /* line 280, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
+  /* line 280, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
   blockquote p:before {
     content: "“";
     content: open-quote; }
-  /* line 285, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
+  /* line 285, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
   blockquote p:after {
     content: "";
     content: no-close-quote; }
-  /* line 290, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
+  /* line 290, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
   blockquote p:last-of-type:after {
     content: "”";
     content: close-quote; }
 
-/* line 299, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
+/* line 299, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
 q {
   quotes: "‘" "’" "“" "”";
   /**
    * If an element opens with an inline quote, let’s hang that.
    */ }
-  /* line 302, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
+  /* line 302, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
   q:before {
     content: "‘";
     content: open-quote; }
-  /* line 307, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
+  /* line 307, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
   q:after {
     content: "’";
     content: close-quote; }
-  /* line 312, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
+  /* line 312, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
   q q:before {
     content: "“";
     content: open-quote; }
-  /* line 317, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
+  /* line 317, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
   q q:after {
     content: "”";
     content: close-quote; }
-  /* line 325, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
+  /* line 325, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
   q:first-child {
     display: inline-block;
     text-indent: -0.22em; }
@@ -185,417 +575,1984 @@ q {
 /**
  * Crude table styles; tables are very difficult to keep on the baseline.
  */
-/* line 342, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
+/* line 342, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
 table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 350, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
+/* line 350, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/_typecsset.scss */
 th,
 td {
   padding: 12px; }
 
-/* normalize.css v2.1.1 | MIT License | git.io/normalize */
-/* ==========================================================================
-   HTML5 display definitions
-   ========================================================================== */
-/**
- * Correct `block` display not defined in IE 8/9.
- */
-/* line 23, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-main,
-nav,
-section,
-summary {
-  display: block; }
-
-/**
- * Correct `inline-block` display not defined in IE 8/9.
- */
-/* line 33, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-audio,
-canvas,
-video {
-  display: inline-block; }
-
-/**
- * Prevent modern browsers from displaying `audio` without controls.
- * Remove excess height in iOS 5 devices.
- */
-/* line 42, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-audio:not([controls]) {
-  display: none;
-  height: 0; }
-
-/**
- * Address styling not present in IE 8/9.
- */
-/* line 51, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-[hidden] {
-  display: none; }
-
-/* ==========================================================================
-   Base
-   ========================================================================== */
-/**
- * 1. Set default font family to sans-serif.
- * 2. Prevent iOS text size adjust after orientation change, without disabling
- *    user zoom.
- */
-/* line 65, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
+/* line 10, /Users/richo/Sites/middleman_starter/source/stylesheets/base/_elements.sass */
 html {
-  font-family: sans-serif;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */ }
-
-/**
- * Remove default margin.
- */
-/* line 75, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-body {
-  margin: 0; }
-
-/* ==========================================================================
-   Links
-   ========================================================================== */
-/**
- * Address `outline` inconsistency between Chrome and other browsers.
- */
-/* line 87, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-a:focus {
-  outline: thin dotted; }
-
-/**
- * Improve readability when focused and also mouse hovered in all browsers.
- */
-/* line 96, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-a:active,
-a:hover {
-  outline: 0; }
-
-/* ==========================================================================
-   Typography
-   ========================================================================== */
-/**
- * Address variable `h1` font-size and margin within `section` and `article`
- * contexts in Firefox 4+, Safari 5, and Chrome.
- */
-/* line 109, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0; }
-
-/**
- * Address styling not present in IE 8/9, Safari 5, and Chrome.
- */
-/* line 118, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-abbr[title] {
-  border-bottom: 1px dotted; }
-
-/**
- * Address style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
- */
-/* line 127, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-b,
-strong {
-  font-weight: bold; }
-
-/**
- * Address styling not present in Safari 5 and Chrome.
- */
-/* line 135, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-dfn {
-  font-style: italic; }
-
-/**
- * Address differences between Firefox and other browsers.
- */
-/* line 143, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-hr {
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  height: 0; }
-
-/**
- * Address styling not present in IE 8/9.
- */
-/* line 153, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-mark {
-  background: #ff0;
-  color: #000; }
-
-/**
- * Correct font family set oddly in Safari 5 and Chrome.
- */
-/* line 165, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  font-size: 1em; }
-
-/**
- * Improve readability of pre-formatted text in all browsers.
- */
-/* line 174, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-pre {
-  white-space: pre-wrap; }
-
-/**
- * Set consistent quote types.
- */
-/* line 182, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-q {
-  quotes: "\201C" "\201D" "\2018" "\2019"; }
-
-/**
- * Address inconsistent and variable font size in all browsers.
- */
-/* line 190, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-small {
-  font-size: 80%; }
-
-/**
- * Prevent `sub` and `sup` affecting `line-height` in all browsers.
- */
-/* line 199, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline; }
-
-/* line 206, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-sup {
-  top: -0.5em; }
-
-/* line 210, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-sub {
-  bottom: -0.25em; }
-
-/* ==========================================================================
-   Embedded content
-   ========================================================================== */
-/**
- * Remove border when inside `a` element in IE 8/9.
- */
-/* line 222, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-img {
-  border: 0; }
-
-/**
- * Correct overflow displayed oddly in IE 9.
- */
-/* line 230, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-svg:not(:root) {
-  overflow: hidden; }
-
-/* ==========================================================================
-   Figures
-   ========================================================================== */
-/**
- * Address margin not present in IE 8/9 and Safari 5.
- */
-/* line 242, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-figure {
-  margin: 0; }
-
-/* ==========================================================================
-   Forms
-   ========================================================================== */
-/**
- * Define consistent border, margin, and padding.
- */
-/* line 254, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em; }
-
-/**
- * 1. Correct `color` not being inherited in IE 8/9.
- * 2. Remove padding so people aren't caught out if they zero out fieldsets.
- */
-/* line 265, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-legend {
-  border: 0;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
-
-/**
- * 1. Correct font family not being inherited in all browsers.
- * 2. Correct font size not being inherited in all browsers.
- * 3. Address margins set differently in Firefox 4+, Safari 5, and Chrome.
- */
-/* line 279, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-button,
-input,
-select,
-textarea {
-  font-family: inherit;
-  /* 1 */
-  font-size: 100%;
-  /* 2 */
-  margin: 0;
-  /* 3 */ }
-
-/**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
- */
-/* line 291, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-button,
-input {
-  line-height: normal; }
-
-/**
- * Address inconsistent `text-transform` inheritance for `button` and `select`.
- * All other form control elements do not inherit `text-transform` values.
- * Correct `button` style inheritance in Chrome, Safari 5+, and IE 8+.
- * Correct `select` style inheritance in Firefox 4+ and Opera.
- */
-/* line 303, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-button,
-select {
-  text-transform: none; }
-
-/**
- * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
- *    and `video` controls.
- * 2. Correct inability to style clickable `input` types in iOS.
- * 3. Improve usability and consistency of cursor style between image-type
- *    `input` and others.
- */
-/* line 318, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-  cursor: pointer;
-  /* 3 */ }
-
-/**
- * Re-set default cursor for disabled elements.
- */
-/* line 328, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-button[disabled],
-html input[disabled] {
-  cursor: default; }
-
-/**
- * 1. Address box sizing set to `content-box` in IE 8/9.
- * 2. Remove excess padding in IE 8/9.
- */
-/* line 338, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-input[type="checkbox"],
-input[type="radio"] {
-  box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */ }
-
-/**
- * 1. Address `appearance` set to `searchfield` in Safari 5 and Chrome.
- * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
- *    (include `-moz` to future-proof).
- */
-/* line 349, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  -moz-box-sizing: content-box;
-  -webkit-box-sizing: content-box;
-  /* 2 */
-  box-sizing: content-box; }
-
-/**
- * Remove inner padding and search cancel button in Safari 5 and Chrome
- * on OS X.
- */
-/* line 362, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none; }
-
-/**
- * Remove inner padding and border in Firefox 4+.
- */
-/* line 371, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0; }
-
-/**
- * 1. Remove default vertical scrollbar in IE 8/9.
- * 2. Improve readability and alignment in all browsers.
- */
-/* line 381, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-textarea {
-  overflow: auto;
-  /* 1 */
-  vertical-align: top;
-  /* 2 */ }
-
-/* ==========================================================================
-   Tables
-   ========================================================================== */
-/**
- * Remove most spacing between table cells.
- */
-/* line 394, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/vendor/_normalize.scss */
-table {
-  border-collapse: collapse;
-  border-spacing: 0; }
-
-/* line 10, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/base/_elements.sass */
-html {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   height: 100%; }
 
-/* line 14, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/base/_elements.sass */
+/* line 14, /Users/richo/Sites/middleman_starter/source/stylesheets/base/_elements.sass */
 body {
   background-color: white;
   height: 100%; }
 
-/* line 18, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/base/_elements.sass */
+/* line 18, /Users/richo/Sites/middleman_starter/source/stylesheets/base/_elements.sass */
 a {
   color: #0066ff; }
-  /* line 21, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/base/_elements.sass */
+  /* line 21, /Users/richo/Sites/middleman_starter/source/stylesheets/base/_elements.sass */
   a:hover, a:focus {
     color: #003d99; }
 
-/* line 24, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/base/_elements.sass */
+/* line 24, /Users/richo/Sites/middleman_starter/source/stylesheets/base/_elements.sass */
 p {
   margin-top: 24px;
   margin-top: 1.5rem;
   margin-bottom: 24px;
   margin-bottom: 1.5rem; }
+  /* line 28, /Users/richo/Sites/middleman_starter/source/stylesheets/base/_elements.sass */
+  p:last-child {
+    margin-bottom: 0px;
+    margin-bottom: 0rem; }
 
-/* line 1, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/modules/_example-module.sass */
+/* line 32, /Users/richo/Sites/middleman_starter/source/stylesheets/base/_elements.sass */
+ul, ol {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem;
+  padding-left: 24px;
+  padding-left: 1.5rem; }
+  /* line 37, /Users/richo/Sites/middleman_starter/source/stylesheets/base/_elements.sass */
+  ul li, ol li {
+    margin-bottom: 0px;
+    margin-bottom: 0rem; }
+
+/* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/base/_elements.sass */
+h1, .h1 {
+  font-size: 32px;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem; }
+
+/* line 45, /Users/richo/Sites/middleman_starter/source/stylesheets/base/_elements.sass */
+h2, .h2 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem; }
+
+/* line 50, /Users/richo/Sites/middleman_starter/source/stylesheets/base/_elements.sass */
+h3, .h3 {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem; }
+
+/* line 55, /Users/richo/Sites/middleman_starter/source/stylesheets/base/_elements.sass */
+h4, .h4 {
+  font-size: 18px;
+  font-size: 1.125rem;
+  line-height: 1.3333333;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem; }
+
+/* line 60, /Users/richo/Sites/middleman_starter/source/stylesheets/base/_elements.sass */
+h5, .h5 {
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.7142857;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem; }
+
+/* line 65, /Users/richo/Sites/middleman_starter/source/stylesheets/base/_elements.sass */
+h6, .h6 {
+  font-size: 12px;
+  font-size: 0.75rem;
+  line-height: 2;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 24px;
+  margin-bottom: 1.5rem; }
+
+/* line 1, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_example-module.sass */
 .example-module, .example-module--is-omega {
   background: #fdfc8f;
   border-radius: 10px;
   padding: 2.5em;
   text-align: center; }
 
-/* line 3, /Users/stuartrichardson/Sites/middleman_starter/source/stylesheets/state/_state.sass */
+/* line 62, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+.grid {
+  max-width: 68em;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 15, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/bourbon/addons/_clearfix.scss */
+  .grid:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* line 65, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+[am-Grid] {
+  float: left;
+  width: 100%; }
+  /* line 15, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/bourbon/addons/_clearfix.scss */
+  [am-Grid]:after {
+    content: "";
+    display: table;
+    clear: both; }
+  @media screen and (min-width: 20em) {
+    /* line 72, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:1"] {
+      float: left;
+      display: block;
+      margin-right: 7.4229704%;
+      width: 19.4327722%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="s:1"]:last-child {
+        margin-right: 0; }
+    /* line 75, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:pre1"] {
+      margin-left: 26.8557426%; }
+    /* line 79, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:1:1"] {
+      float: left;
+      display: block;
+      margin-right: 38.1982059%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="s:1:1"]:last-child {
+        margin-right: 0; }
+    /* line 81, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:pre1:1"] {
+      margin-left: 138.1982059%; }
+    /* line 84, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Row~="s:end"] {
+      margin-right: 0;
+      clear: right; }
+    /* line 88, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Row~="s:start"] {
+      clear: left; }
+    /* line 72, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:2"] {
+      float: left;
+      display: block;
+      margin-right: 7.4229704%;
+      width: 46.2885148%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="s:2"]:last-child {
+        margin-right: 0; }
+    /* line 75, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:pre2"] {
+      margin-left: 53.7114852%; }
+    /* line 79, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:1:2"] {
+      float: left;
+      display: block;
+      margin-right: 16.0363113%;
+      width: 41.9818443%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="s:1:2"]:last-child {
+        margin-right: 0; }
+    /* line 81, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:pre1:2"] {
+      margin-left: 58.0181557%; }
+    /* line 79, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:2:2"] {
+      float: left;
+      display: block;
+      margin-right: 16.0363113%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="s:2:2"]:last-child {
+        margin-right: 0; }
+    /* line 81, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:pre2:2"] {
+      margin-left: 116.0363113%; }
+    /* line 84, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Row~="s:end"] {
+      margin-right: 0;
+      clear: right; }
+    /* line 88, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Row~="s:start"] {
+      clear: left; }
+    /* line 72, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:3"] {
+      float: left;
+      display: block;
+      margin-right: 7.4229704%;
+      width: 73.1442574%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="s:3"]:last-child {
+        margin-right: 0; }
+    /* line 75, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:pre3"] {
+      margin-left: 80.5672278%; }
+    /* line 79, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:1:3"] {
+      float: left;
+      display: block;
+      margin-right: 10.148398%;
+      width: 26.5677347%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="s:1:3"]:last-child {
+        margin-right: 0; }
+    /* line 81, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:pre1:3"] {
+      margin-left: 36.7161327%; }
+    /* line 79, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:2:3"] {
+      float: left;
+      display: block;
+      margin-right: 10.148398%;
+      width: 63.2838673%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="s:2:3"]:last-child {
+        margin-right: 0; }
+    /* line 81, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:pre2:3"] {
+      margin-left: 73.4322653%; }
+    /* line 79, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:3:3"] {
+      float: left;
+      display: block;
+      margin-right: 10.148398%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="s:3:3"]:last-child {
+        margin-right: 0; }
+    /* line 81, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:pre3:3"] {
+      margin-left: 110.148398%; }
+    /* line 84, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Row~="s:end"] {
+      margin-right: 0;
+      clear: right; }
+    /* line 88, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Row~="s:start"] {
+      clear: left; }
+    /* line 72, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:4"] {
+      float: left;
+      display: block;
+      margin-right: 7.4229704%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="s:4"]:last-child {
+        margin-right: 0; }
+    /* line 75, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:pre4"] {
+      margin-left: 107.4229704%; }
+    /* line 79, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:1:4"] {
+      float: left;
+      display: block;
+      margin-right: 7.4229704%;
+      width: 19.4327722%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="s:1:4"]:last-child {
+        margin-right: 0; }
+    /* line 81, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:pre1:4"] {
+      margin-left: 26.8557426%; }
+    /* line 79, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:2:4"] {
+      float: left;
+      display: block;
+      margin-right: 7.4229704%;
+      width: 46.2885148%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="s:2:4"]:last-child {
+        margin-right: 0; }
+    /* line 81, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:pre2:4"] {
+      margin-left: 53.7114852%; }
+    /* line 79, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:3:4"] {
+      float: left;
+      display: block;
+      margin-right: 7.4229704%;
+      width: 73.1442574%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="s:3:4"]:last-child {
+        margin-right: 0; }
+    /* line 81, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:pre3:4"] {
+      margin-left: 80.5672278%; }
+    /* line 79, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:4:4"] {
+      float: left;
+      display: block;
+      margin-right: 7.4229704%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="s:4:4"]:last-child {
+        margin-right: 0; }
+    /* line 81, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="s:pre4:4"] {
+      margin-left: 107.4229704%; }
+    /* line 84, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Row~="s:end"] {
+      margin-right: 0;
+      clear: right; }
+    /* line 88, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Row~="s:start"] {
+      clear: left; } }
+  @media screen and (min-width: 35.5em) {
+    /* line 94, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:1"] {
+      float: left;
+      display: block;
+      margin-right: 3.5786636%;
+      width: 9.3686693%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:1"]:last-child {
+        margin-right: 0; }
+    /* line 97, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre1"] {
+      margin-left: 12.947333%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:1:1"] {
+      float: left;
+      display: block;
+      margin-right: 38.1982059%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:1:1"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre1:1"] {
+      margin-left: 138.1982059%; }
+    /* line 94, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:2"] {
+      float: left;
+      display: block;
+      margin-right: 3.5786636%;
+      width: 22.3160023%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:2"]:last-child {
+        margin-right: 0; }
+    /* line 97, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre2"] {
+      margin-left: 25.8946659%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:1:2"] {
+      float: left;
+      display: block;
+      margin-right: 16.0363113%;
+      width: 41.9818443%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:1:2"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre1:2"] {
+      margin-left: 58.0181557%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:2:2"] {
+      float: left;
+      display: block;
+      margin-right: 16.0363113%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:2:2"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre2:2"] {
+      margin-left: 116.0363113%; }
+    /* line 94, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:3"] {
+      float: left;
+      display: block;
+      margin-right: 3.5786636%;
+      width: 35.2633352%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:3"]:last-child {
+        margin-right: 0; }
+    /* line 97, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre3"] {
+      margin-left: 38.8419989%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:1:3"] {
+      float: left;
+      display: block;
+      margin-right: 10.148398%;
+      width: 26.5677347%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:1:3"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre1:3"] {
+      margin-left: 36.7161327%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:2:3"] {
+      float: left;
+      display: block;
+      margin-right: 10.148398%;
+      width: 63.2838673%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:2:3"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre2:3"] {
+      margin-left: 73.4322653%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:3:3"] {
+      float: left;
+      display: block;
+      margin-right: 10.148398%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:3:3"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre3:3"] {
+      margin-left: 110.148398%; }
+    /* line 94, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:4"] {
+      float: left;
+      display: block;
+      margin-right: 3.5786636%;
+      width: 48.2106682%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:4"]:last-child {
+        margin-right: 0; }
+    /* line 97, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre4"] {
+      margin-left: 51.7893318%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:1:4"] {
+      float: left;
+      display: block;
+      margin-right: 7.4229704%;
+      width: 19.4327722%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:1:4"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre1:4"] {
+      margin-left: 26.8557426%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:2:4"] {
+      float: left;
+      display: block;
+      margin-right: 7.4229704%;
+      width: 46.2885148%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:2:4"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre2:4"] {
+      margin-left: 53.7114852%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:3:4"] {
+      float: left;
+      display: block;
+      margin-right: 7.4229704%;
+      width: 73.1442574%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:3:4"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre3:4"] {
+      margin-left: 80.5672278%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:4:4"] {
+      float: left;
+      display: block;
+      margin-right: 7.4229704%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:4:4"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre4:4"] {
+      margin-left: 107.4229704%; }
+    /* line 94, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:5"] {
+      float: left;
+      display: block;
+      margin-right: 3.5786636%;
+      width: 61.1580011%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:5"]:last-child {
+        margin-right: 0; }
+    /* line 97, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre5"] {
+      margin-left: 64.7366648%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:1:5"] {
+      float: left;
+      display: block;
+      margin-right: 5.8515052%;
+      width: 15.3187959%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:1:5"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre1:5"] {
+      margin-left: 21.170301%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:2:5"] {
+      float: left;
+      display: block;
+      margin-right: 5.8515052%;
+      width: 36.4890969%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:2:5"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre2:5"] {
+      margin-left: 42.3406021%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:3:5"] {
+      float: left;
+      display: block;
+      margin-right: 5.8515052%;
+      width: 57.6593979%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:3:5"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre3:5"] {
+      margin-left: 63.5109031%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:4:5"] {
+      float: left;
+      display: block;
+      margin-right: 5.8515052%;
+      width: 78.829699%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:4:5"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre4:5"] {
+      margin-left: 84.6812041%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:5:5"] {
+      float: left;
+      display: block;
+      margin-right: 5.8515052%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:5:5"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre5:5"] {
+      margin-left: 105.8515052%; }
+    /* line 94, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:6"] {
+      float: left;
+      display: block;
+      margin-right: 3.5786636%;
+      width: 74.1053341%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:6"]:last-child {
+        margin-right: 0; }
+    /* line 97, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre6"] {
+      margin-left: 77.6839977%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:1:6"] {
+      float: left;
+      display: block;
+      margin-right: 4.8291579%;
+      width: 12.6423684%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:1:6"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre1:6"] {
+      margin-left: 17.4715263%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:2:6"] {
+      float: left;
+      display: block;
+      margin-right: 4.8291579%;
+      width: 30.1138947%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:2:6"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre2:6"] {
+      margin-left: 34.9430526%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:3:6"] {
+      float: left;
+      display: block;
+      margin-right: 4.8291579%;
+      width: 47.585421%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:3:6"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre3:6"] {
+      margin-left: 52.414579%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:4:6"] {
+      float: left;
+      display: block;
+      margin-right: 4.8291579%;
+      width: 65.0569474%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:4:6"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre4:6"] {
+      margin-left: 69.8861053%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:5:6"] {
+      float: left;
+      display: block;
+      margin-right: 4.8291579%;
+      width: 82.5284737%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:5:6"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre5:6"] {
+      margin-left: 87.3576316%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:6:6"] {
+      float: left;
+      display: block;
+      margin-right: 4.8291579%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:6:6"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre6:6"] {
+      margin-left: 104.8291579%; }
+    /* line 94, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:7"] {
+      float: left;
+      display: block;
+      margin-right: 3.5786636%;
+      width: 87.052667%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:7"]:last-child {
+        margin-right: 0; }
+    /* line 97, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre7"] {
+      margin-left: 90.6313307%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:1:7"] {
+      float: left;
+      display: block;
+      margin-right: 4.1109178%;
+      width: 10.7620704%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:1:7"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre1:7"] {
+      margin-left: 14.8729883%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:2:7"] {
+      float: left;
+      display: block;
+      margin-right: 4.1109178%;
+      width: 25.6350587%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:2:7"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre2:7"] {
+      margin-left: 29.7459765%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:3:7"] {
+      float: left;
+      display: block;
+      margin-right: 4.1109178%;
+      width: 40.508047%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:3:7"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre3:7"] {
+      margin-left: 44.6189648%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:4:7"] {
+      float: left;
+      display: block;
+      margin-right: 4.1109178%;
+      width: 55.3810352%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:4:7"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre4:7"] {
+      margin-left: 59.491953%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:5:7"] {
+      float: left;
+      display: block;
+      margin-right: 4.1109178%;
+      width: 70.2540235%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:5:7"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre5:7"] {
+      margin-left: 74.3649413%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:6:7"] {
+      float: left;
+      display: block;
+      margin-right: 4.1109178%;
+      width: 85.1270117%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:6:7"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre6:7"] {
+      margin-left: 89.2379296%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:7:7"] {
+      float: left;
+      display: block;
+      margin-right: 4.1109178%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:7:7"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre7:7"] {
+      margin-left: 104.1109178%; }
+    /* line 94, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:8"] {
+      float: left;
+      display: block;
+      margin-right: 3.5786636%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:8"]:last-child {
+        margin-right: 0; }
+    /* line 97, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre8"] {
+      margin-left: 103.5786636%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:1:8"] {
+      float: left;
+      display: block;
+      margin-right: 3.5786636%;
+      width: 9.3686693%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:1:8"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre1:8"] {
+      margin-left: 12.947333%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:2:8"] {
+      float: left;
+      display: block;
+      margin-right: 3.5786636%;
+      width: 22.3160023%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:2:8"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre2:8"] {
+      margin-left: 25.8946659%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:3:8"] {
+      float: left;
+      display: block;
+      margin-right: 3.5786636%;
+      width: 35.2633352%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:3:8"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre3:8"] {
+      margin-left: 38.8419989%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:4:8"] {
+      float: left;
+      display: block;
+      margin-right: 3.5786636%;
+      width: 48.2106682%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:4:8"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre4:8"] {
+      margin-left: 51.7893318%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:5:8"] {
+      float: left;
+      display: block;
+      margin-right: 3.5786636%;
+      width: 61.1580011%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:5:8"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre5:8"] {
+      margin-left: 64.7366648%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:6:8"] {
+      float: left;
+      display: block;
+      margin-right: 3.5786636%;
+      width: 74.1053341%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:6:8"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre6:8"] {
+      margin-left: 77.6839977%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:7:8"] {
+      float: left;
+      display: block;
+      margin-right: 3.5786636%;
+      width: 87.052667%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:7:8"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre7:8"] {
+      margin-left: 90.6313307%; }
+    /* line 101, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:8:8"] {
+      float: left;
+      display: block;
+      margin-right: 3.5786636%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="m:8:8"]:last-child {
+        margin-right: 0; }
+    /* line 103, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="m:pre8:8"] {
+      margin-left: 103.5786636%; }
+    /* line 106, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Row~="m:end"] {
+      margin-right: 0;
+      clear: right; }
+    /* line 110, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Row~="m:start"] {
+      clear: left; } }
+  @media screen and (min-width: 64em) {
+    /* line 116, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:1"] {
+      float: left;
+      display: block;
+      margin-right: 2.3576516%;
+      width: 6.1721527%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:1"]:last-child {
+        margin-right: 0; }
+    /* line 119, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre1"] {
+      margin-left: 8.5298043%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:1:1"] {
+      float: left;
+      display: block;
+      margin-right: 38.1982059%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:1:1"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre1:1"] {
+      margin-left: 138.1982059%; }
+    /* line 116, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:2"] {
+      float: left;
+      display: block;
+      margin-right: 2.3576516%;
+      width: 14.701957%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:2"]:last-child {
+        margin-right: 0; }
+    /* line 119, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre2"] {
+      margin-left: 17.0596086%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:1:2"] {
+      float: left;
+      display: block;
+      margin-right: 16.0363113%;
+      width: 41.9818443%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:1:2"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre1:2"] {
+      margin-left: 58.0181557%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:2:2"] {
+      float: left;
+      display: block;
+      margin-right: 16.0363113%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:2:2"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre2:2"] {
+      margin-left: 116.0363113%; }
+    /* line 116, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:3"] {
+      float: left;
+      display: block;
+      margin-right: 2.3576516%;
+      width: 23.2317613%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:3"]:last-child {
+        margin-right: 0; }
+    /* line 119, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre3"] {
+      margin-left: 25.5894129%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:1:3"] {
+      float: left;
+      display: block;
+      margin-right: 10.148398%;
+      width: 26.5677347%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:1:3"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre1:3"] {
+      margin-left: 36.7161327%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:2:3"] {
+      float: left;
+      display: block;
+      margin-right: 10.148398%;
+      width: 63.2838673%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:2:3"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre2:3"] {
+      margin-left: 73.4322653%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:3:3"] {
+      float: left;
+      display: block;
+      margin-right: 10.148398%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:3:3"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre3:3"] {
+      margin-left: 110.148398%; }
+    /* line 116, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:4"] {
+      float: left;
+      display: block;
+      margin-right: 2.3576516%;
+      width: 31.7615656%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:4"]:last-child {
+        margin-right: 0; }
+    /* line 119, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre4"] {
+      margin-left: 34.1192172%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:1:4"] {
+      float: left;
+      display: block;
+      margin-right: 7.4229704%;
+      width: 19.4327722%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:1:4"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre1:4"] {
+      margin-left: 26.8557426%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:2:4"] {
+      float: left;
+      display: block;
+      margin-right: 7.4229704%;
+      width: 46.2885148%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:2:4"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre2:4"] {
+      margin-left: 53.7114852%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:3:4"] {
+      float: left;
+      display: block;
+      margin-right: 7.4229704%;
+      width: 73.1442574%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:3:4"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre3:4"] {
+      margin-left: 80.5672278%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:4:4"] {
+      float: left;
+      display: block;
+      margin-right: 7.4229704%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:4:4"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre4:4"] {
+      margin-left: 107.4229704%; }
+    /* line 116, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:5"] {
+      float: left;
+      display: block;
+      margin-right: 2.3576516%;
+      width: 40.2913699%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:5"]:last-child {
+        margin-right: 0; }
+    /* line 119, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre5"] {
+      margin-left: 42.6490215%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:1:5"] {
+      float: left;
+      display: block;
+      margin-right: 5.8515052%;
+      width: 15.3187959%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:1:5"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre1:5"] {
+      margin-left: 21.170301%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:2:5"] {
+      float: left;
+      display: block;
+      margin-right: 5.8515052%;
+      width: 36.4890969%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:2:5"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre2:5"] {
+      margin-left: 42.3406021%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:3:5"] {
+      float: left;
+      display: block;
+      margin-right: 5.8515052%;
+      width: 57.6593979%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:3:5"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre3:5"] {
+      margin-left: 63.5109031%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:4:5"] {
+      float: left;
+      display: block;
+      margin-right: 5.8515052%;
+      width: 78.829699%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:4:5"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre4:5"] {
+      margin-left: 84.6812041%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:5:5"] {
+      float: left;
+      display: block;
+      margin-right: 5.8515052%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:5:5"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre5:5"] {
+      margin-left: 105.8515052%; }
+    /* line 116, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:6"] {
+      float: left;
+      display: block;
+      margin-right: 2.3576516%;
+      width: 48.8211742%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:6"]:last-child {
+        margin-right: 0; }
+    /* line 119, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre6"] {
+      margin-left: 51.1788258%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:1:6"] {
+      float: left;
+      display: block;
+      margin-right: 4.8291579%;
+      width: 12.6423684%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:1:6"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre1:6"] {
+      margin-left: 17.4715263%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:2:6"] {
+      float: left;
+      display: block;
+      margin-right: 4.8291579%;
+      width: 30.1138947%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:2:6"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre2:6"] {
+      margin-left: 34.9430526%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:3:6"] {
+      float: left;
+      display: block;
+      margin-right: 4.8291579%;
+      width: 47.585421%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:3:6"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre3:6"] {
+      margin-left: 52.414579%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:4:6"] {
+      float: left;
+      display: block;
+      margin-right: 4.8291579%;
+      width: 65.0569474%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:4:6"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre4:6"] {
+      margin-left: 69.8861053%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:5:6"] {
+      float: left;
+      display: block;
+      margin-right: 4.8291579%;
+      width: 82.5284737%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:5:6"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre5:6"] {
+      margin-left: 87.3576316%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:6:6"] {
+      float: left;
+      display: block;
+      margin-right: 4.8291579%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:6:6"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre6:6"] {
+      margin-left: 104.8291579%; }
+    /* line 116, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:7"] {
+      float: left;
+      display: block;
+      margin-right: 2.3576516%;
+      width: 57.3509785%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:7"]:last-child {
+        margin-right: 0; }
+    /* line 119, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre7"] {
+      margin-left: 59.7086301%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:1:7"] {
+      float: left;
+      display: block;
+      margin-right: 4.1109178%;
+      width: 10.7620704%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:1:7"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre1:7"] {
+      margin-left: 14.8729883%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:2:7"] {
+      float: left;
+      display: block;
+      margin-right: 4.1109178%;
+      width: 25.6350587%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:2:7"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre2:7"] {
+      margin-left: 29.7459765%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:3:7"] {
+      float: left;
+      display: block;
+      margin-right: 4.1109178%;
+      width: 40.508047%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:3:7"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre3:7"] {
+      margin-left: 44.6189648%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:4:7"] {
+      float: left;
+      display: block;
+      margin-right: 4.1109178%;
+      width: 55.3810352%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:4:7"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre4:7"] {
+      margin-left: 59.491953%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:5:7"] {
+      float: left;
+      display: block;
+      margin-right: 4.1109178%;
+      width: 70.2540235%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:5:7"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre5:7"] {
+      margin-left: 74.3649413%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:6:7"] {
+      float: left;
+      display: block;
+      margin-right: 4.1109178%;
+      width: 85.1270117%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:6:7"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre6:7"] {
+      margin-left: 89.2379296%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:7:7"] {
+      float: left;
+      display: block;
+      margin-right: 4.1109178%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:7:7"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre7:7"] {
+      margin-left: 104.1109178%; }
+    /* line 116, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:8"] {
+      float: left;
+      display: block;
+      margin-right: 2.3576516%;
+      width: 65.8807828%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:8"]:last-child {
+        margin-right: 0; }
+    /* line 119, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre8"] {
+      margin-left: 68.2384344%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:1:8"] {
+      float: left;
+      display: block;
+      margin-right: 3.5786636%;
+      width: 9.3686693%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:1:8"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre1:8"] {
+      margin-left: 12.947333%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:2:8"] {
+      float: left;
+      display: block;
+      margin-right: 3.5786636%;
+      width: 22.3160023%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:2:8"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre2:8"] {
+      margin-left: 25.8946659%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:3:8"] {
+      float: left;
+      display: block;
+      margin-right: 3.5786636%;
+      width: 35.2633352%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:3:8"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre3:8"] {
+      margin-left: 38.8419989%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:4:8"] {
+      float: left;
+      display: block;
+      margin-right: 3.5786636%;
+      width: 48.2106682%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:4:8"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre4:8"] {
+      margin-left: 51.7893318%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:5:8"] {
+      float: left;
+      display: block;
+      margin-right: 3.5786636%;
+      width: 61.1580011%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:5:8"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre5:8"] {
+      margin-left: 64.7366648%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:6:8"] {
+      float: left;
+      display: block;
+      margin-right: 3.5786636%;
+      width: 74.1053341%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:6:8"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre6:8"] {
+      margin-left: 77.6839977%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:7:8"] {
+      float: left;
+      display: block;
+      margin-right: 3.5786636%;
+      width: 87.052667%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:7:8"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre7:8"] {
+      margin-left: 90.6313307%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:8:8"] {
+      float: left;
+      display: block;
+      margin-right: 3.5786636%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:8:8"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre8:8"] {
+      margin-left: 103.5786636%; }
+    /* line 116, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:9"] {
+      float: left;
+      display: block;
+      margin-right: 2.3576516%;
+      width: 74.4105871%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:9"]:last-child {
+        margin-right: 0; }
+    /* line 119, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre9"] {
+      margin-left: 76.7682387%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:1:9"] {
+      float: left;
+      display: block;
+      margin-right: 3.1684357%;
+      width: 8.2947238%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:1:9"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre1:9"] {
+      margin-left: 11.4631595%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:2:9"] {
+      float: left;
+      display: block;
+      margin-right: 3.1684357%;
+      width: 19.7578834%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:2:9"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre2:9"] {
+      margin-left: 22.926319%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:3:9"] {
+      float: left;
+      display: block;
+      margin-right: 3.1684357%;
+      width: 31.2210429%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:3:9"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre3:9"] {
+      margin-left: 34.3894786%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:4:9"] {
+      float: left;
+      display: block;
+      margin-right: 3.1684357%;
+      width: 42.6842024%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:4:9"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre4:9"] {
+      margin-left: 45.8526381%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:5:9"] {
+      float: left;
+      display: block;
+      margin-right: 3.1684357%;
+      width: 54.1473619%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:5:9"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre5:9"] {
+      margin-left: 57.3157976%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:6:9"] {
+      float: left;
+      display: block;
+      margin-right: 3.1684357%;
+      width: 65.6105214%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:6:9"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre6:9"] {
+      margin-left: 68.7789571%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:7:9"] {
+      float: left;
+      display: block;
+      margin-right: 3.1684357%;
+      width: 77.073681%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:7:9"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre7:9"] {
+      margin-left: 80.2421166%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:8:9"] {
+      float: left;
+      display: block;
+      margin-right: 3.1684357%;
+      width: 88.5368405%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:8:9"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre8:9"] {
+      margin-left: 91.7052762%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:9:9"] {
+      float: left;
+      display: block;
+      margin-right: 3.1684357%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:9:9"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre9:9"] {
+      margin-left: 103.1684357%; }
+    /* line 116, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:10"] {
+      float: left;
+      display: block;
+      margin-right: 2.3576516%;
+      width: 82.9403914%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:10"]:last-child {
+        margin-right: 0; }
+    /* line 119, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre10"] {
+      margin-left: 85.298043%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:1:10"] {
+      float: left;
+      display: block;
+      margin-right: 2.8425856%;
+      width: 7.441673%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:1:10"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre1:10"] {
+      margin-left: 10.2842586%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:2:10"] {
+      float: left;
+      display: block;
+      margin-right: 2.8425856%;
+      width: 17.7259315%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:2:10"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre2:10"] {
+      margin-left: 20.5685171%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:3:10"] {
+      float: left;
+      display: block;
+      margin-right: 2.8425856%;
+      width: 28.0101901%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:3:10"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre3:10"] {
+      margin-left: 30.8527757%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:4:10"] {
+      float: left;
+      display: block;
+      margin-right: 2.8425856%;
+      width: 38.2944487%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:4:10"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre4:10"] {
+      margin-left: 41.1370342%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:5:10"] {
+      float: left;
+      display: block;
+      margin-right: 2.8425856%;
+      width: 48.5787072%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:5:10"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre5:10"] {
+      margin-left: 51.4212928%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:6:10"] {
+      float: left;
+      display: block;
+      margin-right: 2.8425856%;
+      width: 58.8629658%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:6:10"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre6:10"] {
+      margin-left: 61.7055513%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:7:10"] {
+      float: left;
+      display: block;
+      margin-right: 2.8425856%;
+      width: 69.1472243%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:7:10"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre7:10"] {
+      margin-left: 71.9898099%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:8:10"] {
+      float: left;
+      display: block;
+      margin-right: 2.8425856%;
+      width: 79.4314829%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:8:10"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre8:10"] {
+      margin-left: 82.2740685%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:9:10"] {
+      float: left;
+      display: block;
+      margin-right: 2.8425856%;
+      width: 89.7157414%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:9:10"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre9:10"] {
+      margin-left: 92.558327%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:10:10"] {
+      float: left;
+      display: block;
+      margin-right: 2.8425856%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:10:10"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre10:10"] {
+      margin-left: 102.8425856%; }
+    /* line 116, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:11"] {
+      float: left;
+      display: block;
+      margin-right: 2.3576516%;
+      width: 91.4701957%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:11"]:last-child {
+        margin-right: 0; }
+    /* line 119, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre11"] {
+      margin-left: 93.8278473%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:1:11"] {
+      float: left;
+      display: block;
+      margin-right: 2.577508%;
+      width: 6.74772%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:1:11"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre1:11"] {
+      margin-left: 9.325228%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:2:11"] {
+      float: left;
+      display: block;
+      margin-right: 2.577508%;
+      width: 16.072948%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:2:11"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre2:11"] {
+      margin-left: 18.650456%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:3:11"] {
+      float: left;
+      display: block;
+      margin-right: 2.577508%;
+      width: 25.398176%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:3:11"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre3:11"] {
+      margin-left: 27.975684%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:4:11"] {
+      float: left;
+      display: block;
+      margin-right: 2.577508%;
+      width: 34.723404%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:4:11"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre4:11"] {
+      margin-left: 37.300912%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:5:11"] {
+      float: left;
+      display: block;
+      margin-right: 2.577508%;
+      width: 44.048632%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:5:11"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre5:11"] {
+      margin-left: 46.62614%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:6:11"] {
+      float: left;
+      display: block;
+      margin-right: 2.577508%;
+      width: 53.37386%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:6:11"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre6:11"] {
+      margin-left: 55.951368%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:7:11"] {
+      float: left;
+      display: block;
+      margin-right: 2.577508%;
+      width: 62.699088%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:7:11"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre7:11"] {
+      margin-left: 65.276596%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:8:11"] {
+      float: left;
+      display: block;
+      margin-right: 2.577508%;
+      width: 72.024316%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:8:11"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre8:11"] {
+      margin-left: 74.601824%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:9:11"] {
+      float: left;
+      display: block;
+      margin-right: 2.577508%;
+      width: 81.349544%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:9:11"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre9:11"] {
+      margin-left: 83.927052%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:10:11"] {
+      float: left;
+      display: block;
+      margin-right: 2.577508%;
+      width: 90.674772%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:10:11"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre10:11"] {
+      margin-left: 93.25228%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:11:11"] {
+      float: left;
+      display: block;
+      margin-right: 2.577508%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:11:11"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre11:11"] {
+      margin-left: 102.577508%; }
+    /* line 116, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:12"] {
+      float: left;
+      display: block;
+      margin-right: 2.3576516%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:12"]:last-child {
+        margin-right: 0; }
+    /* line 119, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre12"] {
+      margin-left: 102.3576516%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:1:12"] {
+      float: left;
+      display: block;
+      margin-right: 2.3576516%;
+      width: 6.1721527%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:1:12"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre1:12"] {
+      margin-left: 8.5298043%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:2:12"] {
+      float: left;
+      display: block;
+      margin-right: 2.3576516%;
+      width: 14.701957%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:2:12"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre2:12"] {
+      margin-left: 17.0596086%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:3:12"] {
+      float: left;
+      display: block;
+      margin-right: 2.3576516%;
+      width: 23.2317613%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:3:12"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre3:12"] {
+      margin-left: 25.5894129%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:4:12"] {
+      float: left;
+      display: block;
+      margin-right: 2.3576516%;
+      width: 31.7615656%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:4:12"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre4:12"] {
+      margin-left: 34.1192172%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:5:12"] {
+      float: left;
+      display: block;
+      margin-right: 2.3576516%;
+      width: 40.2913699%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:5:12"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre5:12"] {
+      margin-left: 42.6490215%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:6:12"] {
+      float: left;
+      display: block;
+      margin-right: 2.3576516%;
+      width: 48.8211742%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:6:12"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre6:12"] {
+      margin-left: 51.1788258%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:7:12"] {
+      float: left;
+      display: block;
+      margin-right: 2.3576516%;
+      width: 57.3509785%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:7:12"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre7:12"] {
+      margin-left: 59.7086301%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:8:12"] {
+      float: left;
+      display: block;
+      margin-right: 2.3576516%;
+      width: 65.8807828%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:8:12"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre8:12"] {
+      margin-left: 68.2384344%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:9:12"] {
+      float: left;
+      display: block;
+      margin-right: 2.3576516%;
+      width: 74.4105871%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:9:12"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre9:12"] {
+      margin-left: 76.7682387%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:10:12"] {
+      float: left;
+      display: block;
+      margin-right: 2.3576516%;
+      width: 82.9403914%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:10:12"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre10:12"] {
+      margin-left: 85.298043%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:11:12"] {
+      float: left;
+      display: block;
+      margin-right: 2.3576516%;
+      width: 91.4701957%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:11:12"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre11:12"] {
+      margin-left: 93.8278473%; }
+    /* line 123, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:12:12"] {
+      float: left;
+      display: block;
+      margin-right: 2.3576516%;
+      width: 100%; }
+      /* line 40, /Users/richo/Sites/middleman_starter/source/stylesheets/vendor/neat/grid/_span-columns.scss */
+      [am-Grid] [am-Grid-Col~="l:12:12"]:last-child {
+        margin-right: 0; }
+    /* line 125, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Col~="l:pre12:12"] {
+      margin-left: 102.3576516%; }
+    /* line 128, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Row~="l:end"] {
+      margin-right: 0;
+      clear: right; }
+    /* line 132, /Users/richo/Sites/middleman_starter/source/stylesheets/modules/_grid.sass */
+    [am-Grid] [am-Grid-Row~="l:start"] {
+      clear: left; } }
+
+/* line 3, /Users/richo/Sites/middleman_starter/source/stylesheets/state/_state.sass */
 .is-hidden {
   display: none; }
+
+/* line 39, /Users/richo/Sites/middleman_starter/source/stylesheets/screen.sass */
+.styleguide {
+  background-image: url(http://basehold.it/i/24); }
+
+@media screen and (min-width: 20em) {
+  /* line 44, /Users/richo/Sites/middleman_starter/source/stylesheets/screen.sass */
+  body {
+    background: purple; } }
+@media screen and (min-width: 35.5em) {
+  /* line 48, /Users/richo/Sites/middleman_starter/source/stylesheets/screen.sass */
+  body {
+    background: pink; } }
+@media screen and (min-width: 64em) {
+  /* line 52, /Users/richo/Sites/middleman_starter/source/stylesheets/screen.sass */
+  body {
+    background: blue; } }
