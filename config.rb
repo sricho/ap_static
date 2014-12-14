@@ -1,3 +1,4 @@
+activate :livereload
 ###
 # Page command
 ###
